@@ -1,6 +1,5 @@
 import argparse
 import os
-import glob
 from pathlib import Path
 
 import numpy as np
@@ -31,7 +30,7 @@ def load_rgb_image(path, size=(512, 512)):
     with Image.open(path) as img:
         img = img.convert("RGB")
         original = np.array(img)
-        resized = np.array(img.resize(size)) / 255.0
+        resized = np.array(img.resize(size), dtype=np.float32) / 255.0
         return resized[np.newaxis, ...], original
 
 
@@ -42,7 +41,7 @@ def predict(model, image, shape):
 
 
 def overlay_mask(image, mask, color=(0, 255, 0), alpha=0.3):
-    overlay = np.zeros_like(image)
+    overlay = np.zeros_like(image, dtype=np.uint8)
     overlay[mask == 1] = color
     return cv2.addWeighted(image, 1 - alpha, overlay, alpha, 0)
 
