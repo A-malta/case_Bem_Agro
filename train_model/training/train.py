@@ -1,7 +1,7 @@
-from models.unet import unet
-from data.data_generator import DataGen
-from metrics.metrics import dice_coef, iou_coef
-from utils.callbacks import get_callbacks
+from train_model.models.unet import unet
+from train_model.data.data_generator import DataGen
+from train_model.metrics.metrics import dice_coef, iou_coef
+from train_model.utils.callbacks import get_callbacks
 
 
 def train(rgb_path, gt_path, model_out_path, input_shape=(512, 512, 3), batch=4, epochs=50):

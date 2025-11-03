@@ -1,5 +1,5 @@
 import argparse
-from training.train import train
+from train_model.training.train import train
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
