@@ -52,8 +52,5 @@ python model_inference.py --rgb images_validation --modelpath model/model.h5 --o
 ## Resultados
 
 <p align="center">
-  <img src="results/2.jpeg" alt="Resultado 2" width="100%" style="margin-bottom:20px;">
-  <img src="results/5.jpeg" alt="Resultado 5" width="100%" style="margin-bottom:20px;">
-  <img src="results/6.jpeg" alt="Resultado 6" width="100%" style="margin-bottom:20px;">
-  <img src="results/7.jpeg" alt="Resultado 7" width="100%" style="margin-bottom:20px;">
-</p>
+  <img src="results/3.jpeg" alt="Resultado" width="100%" style="margin-bottom:20px;">
+
