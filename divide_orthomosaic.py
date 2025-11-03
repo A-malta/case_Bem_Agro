@@ -10,9 +10,9 @@ from rasterio.windows import Window
 def generate_windows(width, height, size):
     for y in range(0, height, size):
         for x in range(0, width, size):
-            win_width = min(size, width - x)
-            win_height = min(size, height - y)
-            yield x, y, Window(x, y, win_width, win_height)
+            if x + size > width or y + size > height:
+                continue
+            yield x, y, Window(x, y, size, size)
 
 
 def crop_image(src, output_dir, size=512):
