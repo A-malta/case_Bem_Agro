@@ -49,7 +49,7 @@ python train_model.py --rgb dataset/crops --groundtruth dataset/masks --modelpat
 python model_inference.py --rgb images_validation --modelpath model/model.h5 --output results
 ```
 
-## Resultados
+## Resultado
 
 <p align="center">
   <img src="results/3.jpeg" alt="Resultado" width="100%" style="margin-bottom:20px;">
