@@ -46,7 +46,7 @@ python train_model.py --rgb dataset/crops --groundtruth dataset/masks --modelpat
 ### 4. Inferência com o Modelo Treinado
 
 ```bash
-python model_inference.py --rgb images_validation --modelpath model/model.h5 --output results_predictions
+python model_inference.py --rgb images_validation --modelpath model/model.h5 --output results
 ```
 
 ## Resultados
