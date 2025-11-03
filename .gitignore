@@ -11,13 +11,6 @@ __pycache__/
 *.tmp
 *.cache
 
-# Arquivos de imagem e ortomosaicos
-*.tif
-*.tiff
-*.png
-*.jpg
-*.jpeg
-
 # Arquivos de configuração do sistema e IDEs
 .vscode/
 .idea/
